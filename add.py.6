@@ -1,0 +1,27 @@
+1)
+myFile = open('today','r')
+
+ips = {}
+
+for line in myFile:
+    parts = line.split(' ')
+    if parts[1] == 'Failure':
+        if parts[0] in ips:
+            ips[pars[0]] += 1
+        else:
+            ips[parts[0]] = 0
+
+for ip in [k for k, v in ips.iteritems() if v >=5]:
+
+
+
+2)
+some_bytes = b'\xC3\xA9'
+  
+# Open in "wb" mode to
+# write a new file, or 
+# "ab" mode to append
+with open("my_file.txt", "wb") as binary_file:
+    
+    # Write bytes to file
+    binary_file.write(some_bytes)
